@@ -1,17 +1,15 @@
-
-
 function rentalCarCost(noDays) {
-  // Your solution here
-  
-  if(noDays>=3&&noDays<7){
-  return (noDays*40)-20;
-  }
-  
-  else if(noDays>=7){
-  return (noDays*40)-50;
-  }
-  
-  else{
-  return noDays*40;}
-}
+    // Your solution here
+    var result = 0;
+    var carcost = noDays * 40;
+    if (noDays >= 3 && noDays < 7) {
 
+        result = carcost - 20;
+
+    } else if (noDays >= 7) {
+        result = carcost - 50;
+    } else {
+        result = carcost;
+    }
+    return result;
+}
