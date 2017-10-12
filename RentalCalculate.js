@@ -4,3 +4,4 @@ function rentalCarCost(noDays) {
   else if (noDays >= 3){ totalCost -= 20;}
   return totalCost;
 }
+
